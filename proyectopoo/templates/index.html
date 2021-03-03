@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+    <header class="masthead text-white inicio-radius">
+        <div class="container-fluid align-items-center  flex-column">
+            <div class="row">
+                <div class="col-md-6 animated bounceInUp">
+                    <h1 class="masthead-heading">POO CON PYTHON</h1>
+                    <p class="masthead-subheading font-weight-light">Tratamientos de cadenas</p>
+                    <div class="form-group form-inline">
+                        <div class="col-sm-12">
+                            <div class="form-group"><button class="btn btn-dark btn-lg" type="submit">Ver más....</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animated fadeInRight">
+                    <img class="img-responsive" width="100%" src="{{url_for('static',filename='images/inicio.png')}}" alt="inicio" />
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}

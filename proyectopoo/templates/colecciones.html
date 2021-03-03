@@ -1,0 +1,56 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+    <section class="masthead page-section  inicio-radius">
+        <div class="container formulario animated flipInX">
+            <br>
+            <h2 class="page-section-heading text-center text-title mb-0">Colecciones</h2>
+            <br>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <form action="" class="form-group" method="POST" id="form">
+                        <div class="form-group">
+                            <select name="select" class="form-control" va>
+                                <option value="0">Seleccione opcion</option>
+                                <option value="1">Obtener Elementos</option>
+                                <option value="2">Recorrer Tupla</option>
+                                <option value="3">Recorrer Lista</option>
+                                <option value="4">Recorrer Diccionario</option>
+                                <option value="5">Invertir Lista</option>
+                                <option value="6">Lista de Tuplas</option>
+                                <option value="7">Lista de Diccionarios</option>
+                                <option value="8">Comprehension Listas</option>
+                                <option value="9">Comprehension Diccionario</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Valor1</label>
+                                <input class="form-control" name="valor1" id="valor1" type="text" placeholder="Valor1"
+                                   value="{{n1}}"
+                                   />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Valor2</label>
+                                <input class="form-control" name="valor2" id="valor2" type="text" placeholder="Valor2"
+                                   value= "{{n2}}"
+                                   />
+                            </div>
+                        </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                        <button class="form-control btn btn-success" id="Aceptar" type="submit">Aceptar</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea disabled class="form-control" name="" id="" rows="5">{{respuesta}}</textarea>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

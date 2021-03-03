@@ -1,0 +1,57 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+    <section class="masthead page-section inicio-radius">
+        <div class="container formulario animated flipInX">
+            <br>
+            <h2 class="page-section-heading text-center text-title mb-0">Calculos</h2>
+            <br>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <form  action=""  class="form-group" method="POST">
+                        <div class="form-group">
+                            <select name="select" class="form-control">
+                                <option value="0">Seleccione opcion</option>
+                                <option value="1">Divisores de un Numero</option>
+                                <option value="2">Pares e Impares</option>
+                                <option value="3">Fibonacci</option>
+                                <option value="4">Numero Primo</option>
+                                <option value="5">Numeros Primos</option>
+                                <option value="6">Primo Gemelos</option>
+                                <option value="7">Perfecto</option>
+                                <option value="8">Amigos</option>
+                                <option value="9">Invertir Numero</option>
+                                <option value="10">Base 2 a Base 10</option>
+                                <option value="11">Base 10 a Base 2</option>
+                                <option value="12">Cualquier Base</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Valor1</label>
+                                <input name="valor1" class="form-control" id="valor1" type="text" placeholder="Valor1"
+                                   value="{{n1}}"
+                                   />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Valor2</label>
+                                <input name="valor2" class="form-control" id="valor2" type="text" placeholder="Valor2"
+                                 value="{{n2}}"
+                                 />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group"><button class="form-control btn btn-success" id="Aceptar" type="submit">Aceptar</button></div>
+                        </div>
+                    <div class="form-group">
+                        <textarea disabled class="form-control" name="" id="" rows="5">{{respuesta}}</textarea>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

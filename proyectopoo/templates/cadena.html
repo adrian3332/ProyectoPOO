@@ -1,0 +1,65 @@
+{% extends 'base/base.html' %}
+<title> Pagina Web</title>
+
+{% block contenido %}
+    <section class="masthead page-section  inicio-radius">
+        <div class="container formulario animated flipInX">
+            <br>
+            <h2 class="page-section-heading text-center text-title mb-0">Cadenas</h2>
+            <br>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <form ction="" class="form-group" method="POST">
+                        <div class="form-group">
+                            <select name="select" class="form-control">
+                                <option value="0">Seleccione opcion</option>
+                                <option value="1">Recorrer Cadena</option>
+                                <option value="2">Invertir Cadena</option>
+                                <option value="3">Buscar un Caracter</option>
+                                <option value="4">Vocales en Cadena</option>
+                                <option value="5">Ocurrencias Caracter</option>
+                                <option value="6">Concatenar Cadenas</option>
+                                <option value="7">Reemplazar Caracter en Cadena</option>
+                                <option value="8">Crear Lista de una Cadena</option>
+                                <option value="9">Crear Cadena de una Lista</option>
+                                <option value="10">Buscar Subcadena en Cadena</option>
+                                <option value="11">Insertar Subcadena en Cadena</option>
+                                <option value="12">Eliminar Subcadena en Cadena</option>
+                                <option value="13">Base 2 a Base 10</option>
+                                <option value="14">Base 10 a Base 2</option>
+                                <option value="15">Cualquier Base</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Valor1</label>
+                                <input name="valor1" class="form-control" id="valor1" type="text" placeholder="Valor1"
+                                    value="{{n1}}"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Valor2</label>
+                                <input name="valor2" class="form-control" id="valor2" type="text" placeholder="Valor2"
+                                    value="{{n2}}"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Valor3</label>
+                                <input name="valor3" class="form-control" id="valor3" type="text" placeholder="Valor3"
+                                    value="{{n3}}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group"><button class="form-control btn btn-success" id="Aceptar" type="submit">Aceptar</button></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea disabled class="form-control" name="" id="" rows="5">{{respuesta}}</textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

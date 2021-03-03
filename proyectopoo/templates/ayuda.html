@@ -1,0 +1,58 @@
+{% extends 'base/base.html' %}
+<title> Pagina Web</title>
+
+{% block contenido %}
+     <section class="masthead page-section portfolio inicio-radius">
+        <div class="container">
+            <h1 class="page-section-heading text-center text-uppercase animated bounceInUp text-warning mb-0">Ayuda Del Sitio</h1>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5 animated bounce">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-120">
+                            <div class="portfolio-item-caption-content text-center text-dark">
+                                <strong><i>Diccionarios</i></strong>
+                                <p>Un Diccionario es una estructura de datos y un tipo de dato en Python con características 
+                                    especiales que nos permite almacenar cualquier tipo de valor como enteros, cadenas, 
+                                    listas e incluso otras funciones. 
+                                </p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="../static/images/diccionario.jpg" alt="colecciones" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto animated bounce">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-120">
+                            <div class="portfolio-item-caption-content text-center text-dark">
+                                <strong> <i>Cadenas</i></strong>
+                                <p>Los cadenas (o strings) son un tipo de datos compuestos por secuencias de caracteres 
+                                    que representan texto. Estas cadenas de texto son de tipo str y se delimitan mediante
+                                    el uso de comillas simples o dobles
+                                </p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="../static/images/cadena.jpg" alt="cadenas" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto animated bounce">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-dark">
+                                <strong><i>Calculos</i></strong>
+                                <p>Los siguientes son expresiones válidas en Python cuyo significado es más o ...
+                                     cálculos simples como la suma, multiplicación, o concatenación de cadena
+                                </p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="../static/images/calculo.jpg" alt="operaciones" />
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </section>
+{% endblock %}
